@@ -5,7 +5,13 @@
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css')}}">
 </head>
 <body>
-    <h1>Rock Paper Scissors Game</hi>
+    <h1>Rock Paper Scissors Game v1</hi>
+      <div class="opponent">
+        <input type="radio" name="opponent" id="computer" value="Computer" checked>
+        <label for="computer">Computer</label>
+        <input type="radio" name="opponent" id="friend" value="Friend">
+        <label for="friend">Friend</label>
+    </div>
     <div class="game">
       <button class="choice" id="rock">Rock</button>
       <button class="choice" id="paper">Paper</button>
