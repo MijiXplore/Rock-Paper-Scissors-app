@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css')}}">
+</head>
+<body>
+    <h1>Rock Paper Scissors Game</hi>
+    <div class="game">
+      <button class="choice" id="rock">Rock</button>
+      <button class="choice" id="paper">Paper</button>
+      <button class="choice" id="scissors">Scissors</button>
+    </div>
+    <div class="result" id="result"></div>
+    <div class="win-counts">
+      <div id="computer-wins">Computer wins: 0</div>
+      <div id="player-wins">You win: 0</div>
+    </div>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
